@@ -16,11 +16,7 @@ The solution, of course, is a software application!  That's why you're here, rig
 * Sending the plotter file to the cutting machine
 * Printing shipping labels 
 
-I put the stickers on ebay as a test to see if people would like them.  It turns out, they did!  They sold quite well and I got 100% positive feedback from buyers.
-
-But, as it turns out, getting licensing from the major pro leagues is very difficult.  Actually, pretty close to impossible.  As a result, sadly, this company was DOA.  So, RIP FanFavoriteDesigns!  
-
-This is the source code of the backoffice application.  It may be helpful for someone someday.
+This is the source code of the backoffice application that does all these things.  It may be helpful for someone someday.
 
 
 Screenshots
