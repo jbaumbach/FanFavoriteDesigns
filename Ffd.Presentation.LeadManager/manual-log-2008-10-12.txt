@@ -1,0 +1,354 @@
+10/12/2008 1:29:00 AM  Processing new leads in db, debugging mode: False...
+10/12/2008 1:29:00 AM  Getting leads from db...
+10/12/2008 1:29:08 AM  Processing lead: name: "Barbara Carson" - email: "barbdragonfly@gmail.com"
+10/12/2008 1:29:08 AM  Creating image: Football_002_CARSON_08.jpg
+10/12/2008 1:29:08 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:29:08 AM  Done creating email, now gonna email it.
+10/12/2008 1:29:43 AM  Sending SMTP mail...
+10/12/2008 1:29:58 AM  Updated status log - all good.
+10/12/2008 1:30:01 AM  Mail Sent!
+10/12/2008 1:30:01 AM  Processing lead: name: "Taylor Doherty" - email: "goddy2shoes_4u_2010@yahoo.com"
+10/12/2008 1:30:01 AM  Creating image: Football_002_DOHERTY_08.jpg
+10/12/2008 1:30:02 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:30:02 AM  Done creating email, now gonna email it.
+10/12/2008 1:30:02 AM  Sending SMTP mail...
+10/12/2008 1:30:04 AM  Updated status log - all good.
+10/12/2008 1:30:04 AM  Mail Sent!
+10/12/2008 1:30:04 AM  Processing lead: name: "sandra towery" - email: "robansandra@aol.com"
+10/12/2008 1:30:04 AM  Creating image: Football_002_TOWERY_08.jpg
+10/12/2008 1:30:04 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:30:05 AM  Done creating email, now gonna email it.
+10/12/2008 1:30:05 AM  Sending SMTP mail...
+10/12/2008 1:30:35 AM  Can't send email, gonna hang out for a bit, and try again.
+10/12/2008 1:30:55 AM  Mail Sent!
+10/12/2008 1:30:55 AM  Processing lead: name: "Josalind Mercado" - email: "beautyfully83@yahoo.com"
+10/12/2008 1:30:55 AM  Creating image: Football_002_MERCADO_08.jpg
+10/12/2008 1:30:56 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:30:56 AM  Done creating email, now gonna email it.
+10/12/2008 1:30:56 AM  Sending SMTP mail...
+10/12/2008 1:30:58 AM  Updated status log - all good.
+10/12/2008 1:30:58 AM  Mail Sent!
+10/12/2008 1:30:58 AM  Processing lead: name: "anthony przybylka" - email: "tiggermomanddad3@yahoo.com"
+10/12/2008 1:30:59 AM  Creating image: Football_002_PRZYBYLKA_08.jpg
+10/12/2008 1:30:59 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:30:59 AM  Done creating email, now gonna email it.
+10/12/2008 1:30:59 AM  Sending SMTP mail...
+10/12/2008 1:31:02 AM  Updated status log - all good.
+10/12/2008 1:31:02 AM  Mail Sent!
+10/12/2008 1:31:02 AM  Processing lead: name: "Cynthia Jimenez" - email: "jimenez_cyn@yahoo.com"
+10/12/2008 1:31:02 AM  Creating image: Football_002_JIMENEZ_08.jpg
+10/12/2008 1:31:02 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:31:02 AM  Done creating email, now gonna email it.
+10/12/2008 1:31:02 AM  Sending SMTP mail...
+10/12/2008 1:31:08 AM  Updated status log - all good.
+10/12/2008 1:31:08 AM  Mail Sent!
+10/12/2008 1:31:08 AM  Processing lead: name: "Fran Stavros" - email: "fstavros@mini-skool.com"
+10/12/2008 1:31:08 AM  Creating image: Football_002_STAVROS_08.jpg
+10/12/2008 1:31:08 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:31:08 AM  Done creating email, now gonna email it.
+10/12/2008 1:31:08 AM  Sending SMTP mail...
+10/12/2008 1:31:14 AM  Updated status log - all good.
+10/12/2008 1:31:14 AM  Mail Sent!
+10/12/2008 1:31:14 AM  Processing lead: name: "Wendy Ryan" - email: "nyejunk@yahoo.com"
+10/12/2008 1:31:14 AM  Creating image: Football_002_RYAN_08.jpg
+10/12/2008 1:31:14 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:31:14 AM  Done creating email, now gonna email it.
+10/12/2008 1:31:14 AM  Sending SMTP mail...
+10/12/2008 1:31:17 AM  Updated status log - all good.
+10/12/2008 1:31:17 AM  Mail Sent!
+10/12/2008 1:31:17 AM  Processing lead: name: "Tammy Kimmel" - email: "kimmelsylva@aol.com"
+10/12/2008 1:31:17 AM  Creating image: Football_002_KIMMEL_08.jpg
+10/12/2008 1:31:17 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:31:17 AM  Done creating email, now gonna email it.
+10/12/2008 1:31:17 AM  Sending SMTP mail...
+10/12/2008 1:31:19 AM  Updated status log - all good.
+10/12/2008 1:31:20 AM  Mail Sent!
+10/12/2008 1:31:20 AM  Processing lead: name: "Ms. U. Scott" - email: "scottu@daytonastate.edu"
+10/12/2008 1:31:20 AM  Creating image: Football_002_SCOTT_08.jpg
+10/12/2008 1:31:20 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:31:20 AM  Done creating email, now gonna email it.
+10/12/2008 1:31:20 AM  Sending SMTP mail...
+10/12/2008 1:31:22 AM  Updated status log - all good.
+10/12/2008 1:31:22 AM  Mail Sent!
+10/12/2008 1:31:22 AM  Processing lead: name: "Mrs J. Ward" - email: "wardje@daytonastate.edu"
+10/12/2008 1:31:23 AM  Creating image: Football_002_WARD_08.jpg
+10/12/2008 1:31:23 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:31:23 AM  Done creating email, now gonna email it.
+10/12/2008 1:31:23 AM  Sending SMTP mail...
+10/12/2008 1:31:25 AM  Updated status log - all good.
+10/12/2008 1:31:25 AM  Mail Sent!
+10/12/2008 1:31:25 AM  Processing lead: name: "Stephanie Salerno" - email: "ssalerno1016@aol.com"
+10/12/2008 1:31:25 AM  Creating image: Football_002_SALERNO_08.jpg
+10/12/2008 1:31:26 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:31:26 AM  Done creating email, now gonna email it.
+10/12/2008 1:31:26 AM  Sending SMTP mail...
+10/12/2008 1:31:28 AM  Updated status log - all good.
+10/12/2008 1:31:28 AM  Mail Sent!
+10/12/2008 1:31:28 AM  Processing lead: name: "Pam Goodson" - email: "pam_goodson@yahoo.com"
+10/12/2008 1:31:28 AM  Creating image: Football_002_GOODSON_08.jpg
+10/12/2008 1:31:29 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:31:29 AM  Done creating email, now gonna email it.
+10/12/2008 1:31:29 AM  Sending SMTP mail...
+10/12/2008 1:31:31 AM  Updated status log - all good.
+10/12/2008 1:31:31 AM  Mail Sent!
+10/12/2008 1:31:31 AM  Processing lead: name: "KeShaun Hinmon" - email: "liljune06@yahoo.com"
+10/12/2008 1:31:31 AM  Creating image: Football_002_HINMON_08.jpg
+10/12/2008 1:31:32 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:31:32 AM  Done creating email, now gonna email it.
+10/12/2008 1:31:32 AM  Sending SMTP mail...
+10/12/2008 1:31:34 AM  Updated status log - all good.
+10/12/2008 1:31:34 AM  Mail Sent!
+10/12/2008 1:31:34 AM  Processing lead: name: "Paul Murray" - email: "paulmurray73@yahoo.com"
+10/12/2008 1:31:34 AM  Creating image: Football_002_MURRAY_08.jpg
+10/12/2008 1:31:35 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:31:35 AM  Done creating email, now gonna email it.
+10/12/2008 1:31:35 AM  Sending SMTP mail...
+10/12/2008 1:31:37 AM  Updated status log - all good.
+10/12/2008 1:31:37 AM  Mail Sent!
+10/12/2008 1:31:38 AM  Processing lead: name: "Jamie Williams" - email: "jlw91357@comcast.net"
+10/12/2008 1:31:38 AM  Creating image: Football_002_WILLIAMS_08.jpg
+10/12/2008 1:31:38 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:31:38 AM  Done creating email, now gonna email it.
+10/12/2008 1:31:38 AM  Sending SMTP mail...
+10/12/2008 1:31:41 AM  Updated status log - all good.
+10/12/2008 1:31:41 AM  Mail Sent!
+10/12/2008 1:31:41 AM  Processing lead: name: "Michelle Hobbs" - email: "mhobbs@sorinc.com"
+10/12/2008 1:31:41 AM  Creating image: Football_002_HOBBS_08.jpg
+10/12/2008 1:31:41 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:31:41 AM  Done creating email, now gonna email it.
+10/12/2008 1:31:41 AM  Sending SMTP mail...
+10/12/2008 1:31:44 AM  Updated status log - all good.
+10/12/2008 1:31:44 AM  Mail Sent!
+10/12/2008 1:31:44 AM  Processing lead: name: "Cathy Newbury" - email: "chattycathy968@aol.com"
+10/12/2008 1:31:44 AM  Creating image: Football_002_NEWBURY_08.jpg
+10/12/2008 1:31:44 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:31:44 AM  Done creating email, now gonna email it.
+10/12/2008 1:31:44 AM  Sending SMTP mail...
+10/12/2008 1:32:15 AM  Can't send email, gonna hang out for a bit, and try again.
+10/12/2008 1:32:35 AM  Mail Sent!
+10/12/2008 1:32:35 AM  Processing lead: name: "Patricia Massey" - email: "p.massey@omeresa.net"
+10/12/2008 1:32:35 AM  Creating image: Football_002_MASSEY_08.jpg
+10/12/2008 1:32:35 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:32:35 AM  Done creating email, now gonna email it.
+10/12/2008 1:32:35 AM  Sending SMTP mail...
+10/12/2008 1:32:38 AM  Updated status log - all good.
+10/12/2008 1:32:38 AM  Mail Sent!
+10/12/2008 1:32:38 AM  Processing lead: name: "Stephanie Sellers" - email: "imanisierra@aol.com"
+10/12/2008 1:32:38 AM  Creating image: Football_002_SELLERS_08.jpg
+10/12/2008 1:32:38 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:32:39 AM  Done creating email, now gonna email it.
+10/12/2008 1:32:39 AM  Sending SMTP mail...
+10/12/2008 1:32:41 AM  Updated status log - all good.
+10/12/2008 1:32:41 AM  Mail Sent!
+10/12/2008 1:32:41 AM  Processing lead: name: "Kimberly Boral" - email: "kg.boral@gmail.com"
+10/12/2008 1:32:41 AM  Creating image: Football_002_BORAL_08.jpg
+10/12/2008 1:32:42 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:32:42 AM  Done creating email, now gonna email it.
+10/12/2008 1:32:42 AM  Sending SMTP mail...
+10/12/2008 1:32:44 AM  Updated status log - all good.
+10/12/2008 1:32:44 AM  Mail Sent!
+10/12/2008 1:32:44 AM  Processing lead: name: "Irma Bish" - email: "bish@sktc.net"
+10/12/2008 1:32:44 AM  Creating image: Football_002_BISH_08.jpg
+10/12/2008 1:32:45 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:32:45 AM  Done creating email, now gonna email it.
+10/12/2008 1:32:45 AM  Sending SMTP mail...
+10/12/2008 1:32:48 AM  Updated status log - all good.
+10/12/2008 1:32:48 AM  Mail Sent!
+10/12/2008 1:32:48 AM  Processing lead: name: "Amanda Heilesen" - email: "heilesen@sympatico.ca"
+10/12/2008 1:32:48 AM  Creating image: Football_002_HEILESEN_08.jpg
+10/12/2008 1:32:48 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:32:48 AM  Done creating email, now gonna email it.
+10/12/2008 1:32:48 AM  Sending SMTP mail...
+10/12/2008 1:32:51 AM  Updated status log - all good.
+10/12/2008 1:32:51 AM  Mail Sent!
+10/12/2008 1:32:51 AM  Processing lead: name: "Lisa Hensley" - email: "dwayner2003@bellsouth.net"
+10/12/2008 1:32:51 AM  Creating image: Football_002_HENSLEY_08.jpg
+10/12/2008 1:32:51 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:32:51 AM  Done creating email, now gonna email it.
+10/12/2008 1:32:51 AM  Sending SMTP mail...
+10/12/2008 1:32:54 AM  Updated status log - all good.
+10/12/2008 1:32:54 AM  Mail Sent!
+10/12/2008 1:32:54 AM  Processing lead: name: "DIANE PALUCHA" - email: "dpalucha@cox.net"
+10/12/2008 1:32:54 AM  Creating image: Football_002_PALUCHA_08.jpg
+10/12/2008 1:32:54 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:32:54 AM  Done creating email, now gonna email it.
+10/12/2008 1:32:55 AM  Sending SMTP mail...
+10/12/2008 1:32:57 AM  Updated status log - all good.
+10/12/2008 1:32:57 AM  Mail Sent!
+10/12/2008 1:32:57 AM  Processing lead: name: "james alexander" - email: "ooreesesoo@yahoo.com"
+10/12/2008 1:32:57 AM  Creating image: Football_002_ALEXANDER_08.jpg
+10/12/2008 1:32:58 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:32:58 AM  Done creating email, now gonna email it.
+10/12/2008 1:32:58 AM  Sending SMTP mail...
+10/12/2008 1:33:00 AM  Updated status log - all good.
+10/12/2008 1:33:00 AM  Mail Sent!
+10/12/2008 1:33:01 AM  Processing lead: name: "Laura Wills" - email: "willsie5@hotmail.com"
+10/12/2008 1:33:01 AM  Creating image: Hockey_001_WILLS_08.jpg
+10/12/2008 1:33:01 AM  Creating image: Hockey_001_WARRIORS_08.jpg
+10/12/2008 1:33:01 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:01 AM  Sending SMTP mail...
+10/12/2008 1:33:06 AM  Updated status log - all good.
+10/12/2008 1:33:06 AM  Mail Sent!
+10/12/2008 1:33:06 AM  Processing lead: name: "Aleesha Mattingly" - email: "ambelieves@yahoo.com"
+10/12/2008 1:33:06 AM  Creating image: Football_002_MATTINGLY_08.jpg
+10/12/2008 1:33:07 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:07 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:07 AM  Sending SMTP mail...
+10/12/2008 1:33:09 AM  Updated status log - all good.
+10/12/2008 1:33:09 AM  Mail Sent!
+10/12/2008 1:33:09 AM  Processing lead: name: "Misty Palmerton" - email: "mlpalmerton@yahoo.com"
+10/12/2008 1:33:09 AM  Creating image: Football_002_PALMERTON_08.jpg
+10/12/2008 1:33:10 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:10 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:10 AM  Sending SMTP mail...
+10/12/2008 1:33:15 AM  Updated status log - all good.
+10/12/2008 1:33:15 AM  Mail Sent!
+10/12/2008 1:33:15 AM  Processing lead: name: "Brittany Gorden" - email: "stmarys2009@cox.net"
+10/12/2008 1:33:15 AM  Creating image: Football_002_GORDEN_08.jpg
+10/12/2008 1:33:16 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:16 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:16 AM  Sending SMTP mail...
+10/12/2008 1:33:18 AM  Updated status log - all good.
+10/12/2008 1:33:18 AM  Mail Sent!
+10/12/2008 1:33:18 AM  Processing lead: name: "Amy Catanach-Olson" - email: "batt@ap-investigations.com"
+10/12/2008 1:33:18 AM  Creating image: Football_002_ANYNAME_08.jpg
+10/12/2008 1:33:19 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:19 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:19 AM  Sending SMTP mail...
+10/12/2008 1:33:21 AM  Updated status log - all good.
+10/12/2008 1:33:21 AM  Mail Sent!
+10/12/2008 1:33:22 AM  Processing lead: name: "latoya pruitt" - email: "ltypruitt@yahoo.com"
+10/12/2008 1:33:22 AM  Creating image: Football_002_PRUITT_08.jpg
+10/12/2008 1:33:22 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:22 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:22 AM  Sending SMTP mail...
+10/12/2008 1:33:25 AM  Updated status log - all good.
+10/12/2008 1:33:25 AM  Mail Sent!
+10/12/2008 1:33:25 AM  Processing lead: name: "DONNA OCONNOR" - email: "donnaocon@netzero.com"
+10/12/2008 1:33:25 AM  Creating image: Football_002_OCONNOR_08.jpg
+10/12/2008 1:33:25 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:25 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:25 AM  Sending SMTP mail...
+10/12/2008 1:33:28 AM  Updated status log - all good.
+10/12/2008 1:33:28 AM  Mail Sent!
+10/12/2008 1:33:28 AM  Processing lead: name: "Donnisha Sanders" - email: "sandersdonnisha@yahoo.com"
+10/12/2008 1:33:28 AM  Creating image: Football_002_SANDERS_08.jpg
+10/12/2008 1:33:28 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:28 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:28 AM  Sending SMTP mail...
+10/12/2008 1:33:31 AM  Updated status log - all good.
+10/12/2008 1:33:31 AM  Mail Sent!
+10/12/2008 1:33:31 AM  Processing lead: name: "Debbie Perez" - email: "dperez@springisd.org"
+10/12/2008 1:33:31 AM  Creating image: Football_002_PEREZ_08.jpg
+10/12/2008 1:33:31 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:31 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:31 AM  Sending SMTP mail...
+10/12/2008 1:33:34 AM  Updated status log - all good.
+10/12/2008 1:33:34 AM  Mail Sent!
+10/12/2008 1:33:34 AM  Processing lead: name: "Zaida Rivera" - email: "zrivera69@yahoo.com"
+10/12/2008 1:33:34 AM  Creating image: Football_002_RIVERA_08.jpg
+10/12/2008 1:33:34 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:34 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:34 AM  Sending SMTP mail...
+10/12/2008 1:33:37 AM  Updated status log - all good.
+10/12/2008 1:33:37 AM  Mail Sent!
+10/12/2008 1:33:37 AM  Processing lead: name: "Renee Bowman" - email: "renee495@yahoo.com"
+10/12/2008 1:33:37 AM  Creating image: Football_002_BOWMAN_08.jpg
+10/12/2008 1:33:37 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:37 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:37 AM  Sending SMTP mail...
+10/12/2008 1:33:40 AM  Updated status log - all good.
+10/12/2008 1:33:40 AM  Mail Sent!
+10/12/2008 1:33:40 AM  Processing lead: name: "Theresa Villanueva" - email: "theresa@swarmandpunish.com"
+10/12/2008 1:33:40 AM  Creating image: Football_002_VILLANUEVA_08.jpg
+10/12/2008 1:33:41 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:41 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:41 AM  Sending SMTP mail...
+10/12/2008 1:33:44 AM  Updated status log - all good.
+10/12/2008 1:33:44 AM  Mail Sent!
+10/12/2008 1:33:44 AM  Processing lead: name: "Diane Rankins" - email: "pooh_diane_rankins@yahoo.com"
+10/12/2008 1:33:44 AM  Creating image: Football_002_RANKINS_08.jpg
+10/12/2008 1:33:44 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:44 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:44 AM  Sending SMTP mail...
+10/12/2008 1:33:47 AM  Updated status log - all good.
+10/12/2008 1:33:47 AM  Mail Sent!
+10/12/2008 1:33:47 AM  Processing lead: name: "Sarah Yi" - email: "syi1@utmem.edu"
+10/12/2008 1:33:47 AM  Creating image: Football_002_YI_08.jpg
+10/12/2008 1:33:47 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:47 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:47 AM  Sending SMTP mail...
+10/12/2008 1:33:50 AM  Updated status log - all good.
+10/12/2008 1:33:50 AM  Mail Sent!
+10/12/2008 1:33:50 AM  Processing lead: name: "Joslyn Carmichael" - email: "j8c@hotmail.com"
+10/12/2008 1:33:50 AM  Creating image: Football_002_CARMICHAEL_08.jpg
+10/12/2008 1:33:50 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:50 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:50 AM  Sending SMTP mail...
+10/12/2008 1:33:53 AM  Updated status log - all good.
+10/12/2008 1:33:53 AM  Mail Sent!
+10/12/2008 1:33:53 AM  Processing lead: name: "Dan Davies" - email: "daviesd@sympatico.ca"
+10/12/2008 1:33:53 AM  Creating image: Football_002_DAVIES_08.jpg
+10/12/2008 1:33:53 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:53 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:53 AM  Sending SMTP mail...
+10/12/2008 1:33:56 AM  Updated status log - all good.
+10/12/2008 1:33:56 AM  Mail Sent!
+10/12/2008 1:33:56 AM  Processing lead: name: "Kyle May" - email: "kemay@richland.edu"
+10/12/2008 1:33:56 AM  Creating image: Football_002_MAY_08.jpg
+10/12/2008 1:33:56 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:56 AM  Done creating email, now gonna email it.
+10/12/2008 1:33:57 AM  Sending SMTP mail...
+10/12/2008 1:33:59 AM  Updated status log - all good.
+10/12/2008 1:33:59 AM  Mail Sent!
+10/12/2008 1:33:59 AM  Processing lead: name: "julie allen" - email: "jack_allen@bellsouth.net"
+10/12/2008 1:33:59 AM  Creating image: Football_002_ALLEN_08.jpg
+10/12/2008 1:33:59 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:33:59 AM  Done creating email, now gonna email it.
+10/12/2008 1:34:00 AM  Sending SMTP mail...
+10/12/2008 1:34:02 AM  Updated status log - all good.
+10/12/2008 1:34:02 AM  Mail Sent!
+10/12/2008 1:34:02 AM  Processing lead: name: "Stefan Helton" - email: "stefanh1992@yahoo.com"
+10/12/2008 1:34:02 AM  Creating image: Football_002_HELTON_08.jpg
+10/12/2008 1:34:03 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:34:03 AM  Done creating email, now gonna email it.
+10/12/2008 1:34:03 AM  Sending SMTP mail...
+10/12/2008 1:34:05 AM  Updated status log - all good.
+10/12/2008 1:34:05 AM  Mail Sent!
+10/12/2008 1:34:05 AM  Processing lead: name: "Michael Thompson" - email: "allpoliticalmike@yahoo.com"
+10/12/2008 1:34:05 AM  Creating image: Football_002_THOMPSON_08.jpg
+10/12/2008 1:34:06 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:34:06 AM  Done creating email, now gonna email it.
+10/12/2008 1:34:06 AM  Sending SMTP mail...
+10/12/2008 1:34:08 AM  Updated status log - all good.
+10/12/2008 1:34:08 AM  Mail Sent!
+10/12/2008 1:34:09 AM  Processing lead: name: "John Carver" - email: "carvsteelmen@aol.com"
+10/12/2008 1:34:09 AM  Creating image: Football_002_CARVER_08.jpg
+10/12/2008 1:34:09 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:34:09 AM  Done creating email, now gonna email it.
+10/12/2008 1:34:09 AM  Sending SMTP mail...
+10/12/2008 1:34:12 AM  Updated status log - all good.
+10/12/2008 1:34:12 AM  Mail Sent!
+10/12/2008 1:34:12 AM  Processing lead: name: "amanda fortier" - email: "doris183@aol.com"
+10/12/2008 1:34:12 AM  Creating image: Football_002_FORTIER_08.jpg
+10/12/2008 1:34:12 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:34:12 AM  Done creating email, now gonna email it.
+10/12/2008 1:34:12 AM  Sending SMTP mail...
+10/12/2008 1:34:15 AM  Updated status log - all good.
+10/12/2008 1:34:15 AM  Mail Sent!
+10/12/2008 1:35:54 AM  Processing new leads in db, debugging mode: False...
+10/12/2008 1:35:54 AM  Getting leads from db...
+10/12/2008 1:36:28 AM  Processing lead: name: "sandra towery" - email: "robansandra@aol.com"
+10/12/2008 1:36:28 AM  Creating image: Football_002_TOWERY_08.jpg
+10/12/2008 1:36:28 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:36:28 AM  Done creating email, now gonna email it.
+10/12/2008 1:36:28 AM  Sending SMTP mail...
+10/12/2008 1:36:31 AM  Updated status log - all good.
+10/12/2008 1:36:31 AM  Mail Sent!
+10/12/2008 1:36:31 AM  Processing lead: name: "Cathy Newbury" - email: "chattycathy968@aol.com"
+10/12/2008 1:36:31 AM  Creating image: Football_002_NEWBURY_08.jpg
+10/12/2008 1:36:31 AM  Creating image: Baseball_003_WARRIORS_08.jpg
+10/12/2008 1:36:31 AM  Done creating email, now gonna email it.
+10/12/2008 1:36:31 AM  Sending SMTP mail...
+10/12/2008 1:36:34 AM  Updated status log - all good.
+10/12/2008 1:36:34 AM  Mail Sent!

@@ -1,0 +1,203 @@
+<style type="text/css">
+  h1.title { font-size: 24px; font-weight: bold; margin:0; }
+  td.label { width:125px; text-align:right; padding-right: 3px; font-weight:bold; }
+  div.separator { border-bottom: 1px solid #ccc; margin:5px 0; }
+  div.block{ margin-left: 15px; margin-top: 5px; }
+  div.invoice-information div.invoice-item-question { margin-top:5px }
+  
+  /* Shrink the existing div a bit to fit in the preview graphic */
+  div.invoice-question, div.invoice-item-question 
+  { 
+    margin-left:15px; 
+    float:left;
+    width:476px;
+  }
+  
+  @media print {
+    div.invoice-question, div.invoice-item-question {
+        width:236px;
+    }  
+  }
+  
+  #ffdTitle h3 {
+    font-family: United Sans Cd Bk, Arial, "sans serif";
+    font-size:44px;
+  }
+  span.invoice-question-title, span.invoice-item-question-title { font-weight:bold }
+  div.invoice-answer, div.invoice-item-answer { margin-left: 15px }
+</style>
+
+<!-- add our preview graphic to each row -->
+<script type="text/javascript" src="http://www.ergocentricsoftware.com/ffd/scripts/jquery-1.2.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+function GetTemplateFromPartNo(partNo) {
+    var result = "";
+    switch(partNo) {
+    case "t001": 
+        result = "hockey";
+        break;
+    case "t002":
+        result = "football";
+        break;
+    case "t003": 
+        result = "baseball"
+        break;
+    case "t004":
+        result = "basketball";
+        break;
+    case "t005":
+        result = "soccer";
+        break;
+    }
+    return result;
+}
+
+function GetValue(htmlToSearch) {
+    var result = "";
+    var valueToken = "<br>: ";
+    var index = htmlToSearch.search(valueToken);
+    if (index > 0) {
+        result = htmlToSearch.substr(index + valueToken.length);
+    }
+    return result;
+}
+
+$(".grid-view-invoice-row").each(function() {
+    //
+    // 12/17/2008 JB: Todo: zap the descriptions from within the (...) fields of each question. The parens too.
+    //
+    var name = GetValue($(this).find(".invoice-item-answer:eq(0)").html()).toUpperCase();
+    var number = GetValue($(this).find(".invoice-item-answer:eq(1)").html());
+    var template = GetTemplateFromPartNo($(this).find("td:eq(1)").html());
+    // alert("name=" + name + ", no=" + number + ", template=" + template);
+    
+    var url = "http://lavamantis.dyndns.org:8090/getimage.ashx?name=" + name + "&number=" + number + "&template=" + template;    
+    url += "&key=localinvoiceletmeseeit";
+    $(this).find("div.invoice-item-question:eq(0)").after("<img width='100px' height='100px' src='" + url + "'>");
+});
+
+});
+
+</script>
+
+<table cellpadding="4" cellspacing="0" style="border:1px solid #ccc; width:100%">
+  <tr>
+    <td style="width:50%;">
+      <span id="ffdTitle"><%Logo%></span>
+    </td>
+    <td style="vertical-align:bottom; text-align:right;">
+      <h1 class="title">Invoice</h1>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%;">
+      <h3>Order Information</h3>
+      <table cellpadding="4" cellspacing="0" style="border:none; width:300px;">
+        <tr>
+          <td class="label">Order Number:</td>
+          <td><%Order.Number%></td>
+        </tr>
+        <tr>
+          <td class="label">Date:</td>
+          <td><%Order.Date%></td>
+        </tr>
+        <ns:if condition="Order.HasTrackingNumbers">
+        <tr>
+          <td class="label">Tracking Number:</td>
+          <td><%Order.TrackingNumberText%></td>
+        </tr>
+        </ns:if>
+        <tr>
+          <td class="label">Shipping Method:</td>
+          <td><%Order.ShippingMethod%></td>
+        </tr>
+      </table>
+    </td>
+    <td style="width:50%;">
+      <h3>Customer Information</h3>
+      <table cellpadding="4" cellspacing="0" style="border:none; width:300px;">
+        <tr>
+          <td class="label">Customer:</td>
+          <td><%Billing.FirstName%> <%Billing.LastName%></td>
+        </tr>
+        <tr>
+          <td class="label">Email:</td>
+          <td><%Customer.Email%></td>
+        </tr>
+      </table>	            
+    </td>
+  </tr>		  
+  <tr>
+    <td colspan="2"><div class="separator" /></td>
+  </tr>
+  <tr>
+    <td>
+      <h3>Ship To</h3>
+      <div class="block">
+        <div><%Shipping.FirstName%> <%Shipping.LastName%></div>
+        <div><%Shipping.Company%></div>
+        <div><%Shipping.Address1%></div>
+        <div><%Shipping.Address2%></div>
+        <div><%Shipping.City%>, <%Shipping.State%> <%Shipping.PostalCode%></div>
+        <div><%Shipping.Country%></div>
+        <ns:if condition="Shipping.Phone != ''">
+        <div><strong>Phone:</strong><%Shipping.Phone%></div>
+        </ns:if>
+      </div>
+    </td>  
+    <td>
+      <h3>Bill To </h3>
+      <div class="block">
+        <div><%Billing.FirstName%> <%Billing.LastName%></div>
+        <div><%Billing.Company%></div>
+        <div><%Billing.Address1%></div>
+        <div><%Billing.Address2%></div>
+        <div><%Billing.City%>, <%Billing.State%> <%Billing.PostalCode%></div>
+        <div><%Billing.Country%></div>
+        <ns:if condition="Billing.Phone != ''">
+        <div><strong>Phone:</strong><%Billing.Phone%></div>
+        </ns:if>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="separator" /></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <h3>Payment Information</h3>
+      <div class="block">
+        <div><strong>Payment Method:</strong> <%Payment.Method%></div>
+        <ns:if condition="Payment.Status != ''">
+        <div><strong>Status:</strong> <%Payment.Status%></div>
+        </ns:if>
+        <div><%Payment.Details%></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="separator" /></td>
+  </tr>
+  <ns:if condition="Order.HasCheckoutQuestions">
+  </ns:if>
+  <tr>
+    <td colspan="2">
+      <h3>Product Information</h3>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <ns:InvoiceItemDetails />
+    </td>
+  </tr>
+  <ns:if condition="Customer.Notes != ''">
+  <tr>
+    <td>
+      <h5>Customer Notes</h5>
+      <%Customer.Notes%>
+    </td>
+  </tr>
+  </ns:if>
+</table>

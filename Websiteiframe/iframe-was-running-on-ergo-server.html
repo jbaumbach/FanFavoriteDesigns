@@ -1,0 +1,314 @@
+<html>
+    <head>
+    <style type="text/css">
+    body, a { 
+	    font-family:Arial,Helvetica;
+	    font-size:12px;
+        margin:0px; 
+        padding:0px; 
+	    background-color:#000;
+    }
+    li {
+        list-style-type:disc;
+        list-style-position:outside;
+        color:#fff;
+    }
+    a {
+        text-decoration:underline;
+        color:#fff;
+    }
+    .home_images {
+        position:absolute; 
+        top: 0px; 
+        left:240px;
+        width:353px;
+        height:350px;
+    }
+    #home_images_default {
+        /* visibility:hidden; <-- not always reliably shown by jquery below. */
+    }
+    #home_images_preview {
+        visibility:hidden;
+    }
+    #home_images_preview_img {
+        border:0px;
+    }
+    </style>
+    <link rel="stylesheet" href="http://www.fanfavoritedesigns.com/themes/fanfavoritedesigns/css/default.css" />
+    <script type="text/javascript" src="http://www.ergocentricsoftware.com/ffd/scripts/jquery-1.2.2.min.js"></script>
+
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-3534209-1");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+    
+    <script type="text/javascript">
+    //
+    //
+    // var imgGenerator = "http://localhost/ffd/getimage.ashx";
+    var imgGenerator = "http://lavamantis.dyndns.org:8090/getimage.ashx"
+    //
+    //
+    var debug = false;
+    var isDocumentSetUp = false;
+    var previewPageName = "/preview_click";
+    var previewPageNameColor = "/preview_color";
+    
+    function log(msg) {
+        if (debug) {
+            console.log(msg);
+        }
+    }
+    
+    function getUrlParam( name )
+    {
+      name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+      var regexS = "[\\?&]"+name+"=([^&#]*)";
+      var regex = new RegExp( regexS );
+      var results = regex.exec( window.location.href );
+      if( results == null )
+        return "";
+      else
+        return results[1];
+    } 
+       
+    function Preview(name, number, template, color, bgcolor) {
+        var cmdParams = "?name=" + escape(name) + 
+                    "&number=" + escape(number) + 
+                    "&template=" + escape(template) + 
+                    "&color=" + escape(color) + 
+                    "&bgcolor=" + escape(bgcolor);
+        var imgUrl = imgGenerator + cmdParams;
+        var addToCartUrl = $(".cart_links:contains(" + template + ")").attr("href") + cmdParams;
+        $("#home_images_default").css("visibility", "hidden");
+        $("#home_images_preview").css("visibility", "visible");
+        $("#home_images_preview_img").attr("src", imgUrl);
+        $("#home_images_preview_link").attr("href", addToCartUrl);
+    }
+    
+    function getSelectedBGColor() {
+        var colorForm = document.getElementById("bgColorForm");
+        var result = 0;
+        for (var i=0; i < colorForm.bgcolor.length; i++) {
+            if (colorForm.bgcolor[i].checked) {
+                result = colorForm.bgcolor[i].value;
+                break;
+            }    
+        }
+        return result;
+    }
+    
+    function setUpDocument() {
+        log("Setting up doc - current setup status: " + isDocumentSetUp);
+        
+        if (isDocumentSetUp) {
+            return;
+        }
+        
+        $("#preview_button").click(function(){
+            var name = $("#txtName").val().toUpperCase();
+            var number = $("#txtNumber").val();
+            
+            if ((name == "") && (number == ""))
+            {
+                alert("Please enter a name and/or a number to customize the jersey sticker!");
+                return;
+            }
+            
+            var template = $("#lstJerseyType").val();
+            var color = $("#lstColor").val();
+            var bgcolor = getSelectedBGColor();
+            
+            Preview(name, number, template, color, bgcolor);
+
+            try {
+                log("Tracking: " + previewPageName + "/" + template);
+                pageTracker._trackPageview(previewPageName + "/" + template);
+                
+                log("Tracking: " + previewPageNameColor + "/" + $("#lstColor :selected").text().replace(' ', '_'));
+                pageTracker._trackPageview(previewPageNameColor + "/" + $("#lstColor :selected").text().replace(' ', '_'));
+            } catch(err) {}
+            
+            // Stop red glowing if they've already previewed.
+            $(this).attr("src", "http://www.fanfavoritedesigns.com/images/assets/btn-preview.gif");
+            
+        }).css("cursor", "pointer");
+        
+        var name = unescape(getUrlParam("name")).substring(0, 13);
+        var number = unescape(getUrlParam("number"));
+        var template = getUrlParam("template");
+        var haveValidPreview = false;
+        
+        if ((name != "" || number != "") && template != "") {
+            if ($(".cart_links:contains(" + template + ")").length > 0) {
+                name = name.toUpperCase();
+                $("#txtName").val(name);
+                $("#txtNumber").val(number);
+                $("#lstJerseyType").val(template);
+                haveValidPreview = true;
+            }
+        }
+        
+        if (haveValidPreview) {
+            Preview(name, number, template);
+        } else {
+            // Not always reliably running here - let's make it visible by default.
+            // $("#home_images_default").css("visibility", "visible");
+        }
+        
+        isDocumentSetUp = true;
+        
+        log("Done setting up doc - current setup status: " + isDocumentSetUp);
+    }
+    
+    // jquery document ready function is not reliable in FF3 when in iframe.  Manually set up doc.
+    // Update: sometimes javascript doesn't run at all in iframe.  So, added setup to mouseover event of preview
+    // button.  That seems to always work.
+    function isDocumentReady() {
+        if ($("#preview_button").length > 0) {
+            log("Preview button ok - setting up doc.");
+            setUpDocument();
+        } else {
+            log("Doc not ready, trying again soon.");
+            setTimeout('isDocumentReady()', 100);
+        }
+    }
+    
+    $(document).ready(function(){
+    });
+    
+    isDocumentReady();
+    
+    </script>
+    </head>
+    <body>
+    <table>
+    <tbody>
+    <tr>
+    <td valign="top">
+    <p><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Perfect for:</font></p>
+      <ul>
+        <li><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Little League Sports</font></li>
+        <li><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">High-School and College Teams</font></li>
+        <li><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Recreational Leagues</font></li>
+      </ul>
+   <img src="http://www.fanfavoritedesigns.com/images/assets/hr.gif" width="217" height="25"><br>
+      <img src="http://www.fanfavoritedesigns.com/images/assets/hdr-preview-red1.gif" width="177" height="28">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="7%" style="padding-left:6px"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Name:</font></td>
+        <td width="93%"><input type="text" name="txtName" id="txtName" maxlength="13"></td>
+      </tr>
+      <tr>
+        <td style="padding-left:6px"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Number:</font></td>
+        <td><input type="text" name="txtNumber" id="txtNumber" maxlength="2" size="2"></td>
+      </tr>
+      <tr>
+        <td style="padding-left:6px"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Type:</font></td>
+        <td>
+            <select name="lstJerseyType" id="lstJerseyType" class="inputListbox">
+	        <option value="Hockey">Hockey</option>
+	        <option value="Baseball">Baseball</option>
+	        <option value="Football">Football</option>
+	        <option value="Basketball">Basketball</option>
+	        <option value="Soccer">Soccer</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-left:6px"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Color:</font></td>
+        <td>
+            <!-- Note: generated from /iframe/default.aspx dev page -->
+            <select id="lstColor" name="lstColor">
+              <option value="FFFFFF" style="background-color:#FFFFFF; color:#000;">Gloss White</option>
+              <option value="FECB00" style="background-color:#FECB00; color:#000;">Primrose Yellow</option>
+              <option value="FAE700" style="background-color:#FAE700; color:#000;">Sunbeam Yellow</option>
+              <option value="F9E11E" style="background-color:#F9E11E; color:#000;">Matte Yellow</option>
+              <option value="F0AB00" style="background-color:#F0AB00; color:#000;">Yellow</option>
+
+              <option value="F03C1E" style="background-color:#F03C1E; color:#000;">Poppy Red</option>
+              <option value="ECBD04" style="background-color:#ECBD04; color:#000;">Sunflower</option>
+              <option value="EB7BB0" style="background-color:#EB7BB0; color:#000;">Magenta</option>
+              <option value="E10721" style="background-color:#E10721; color:#000;">Wild Cardinal Red</option>
+              <option value="DD4814" style="background-color:#DD4814; color:#000;">Tangerine</option>
+              <option value="DAC681" style="background-color:#DAC681; color:#000;">Beige</option>
+
+              <option value="C9172C" style="background-color:#C9172C; color:#000;">Tomato Red</option>
+              <option value="C2C2BF" style="background-color:#C2C2BF; color:#000;">Silver</option>
+              <option value="A77E38" style="background-color:#A77E38; color:#000;">Gold</option>
+              <option value="A35BD2" style="background-color:#A35BD2; color:#000;">Lavender</option>
+              <option value="A20518" style="background-color:#A20518; color:#fff;">Red</option>
+              <option value="99D8FC" style="background-color:#99D8FC; color:#000;">Peacock Blue</option>
+
+              <option value="707070" style="background-color:#707070; color:#000;">Medium Grey</option>
+              <option value="560356" style="background-color:#560356; color:#fff;">Plum</option>
+              <option value="550018" style="background-color:#550018; color:#fff;">Burgundy</option>
+              <option value="4E0082" style="background-color:#4E0082; color:#fff;">Royal Purple</option>
+              <option value="3D1D16" style="background-color:#3D1D16; color:#fff;">Brown</option>
+              <option value="383837" style="background-color:#383837; color:#fff;">Dark Slate</option>
+
+              <option value="2892FF" style="background-color:#2892FF; color:#000;">Olympic Blue</option>
+              <option value="202099" style="background-color:#202099; color:#fff;">Blue</option>
+              <option value="1D50B7" style="background-color:#1D50B7; color:#000;">Matte Blue</option>
+              <option value="1B67C4" style="background-color:#1B67C4; color:#000;">Azure Blue</option>
+              <option value="15897B" style="background-color:#15897B; color:#000;">Real Teal</option>
+              <option value="061C6E" style="background-color:#061C6E; color:#fff;">Patriot Blue</option>
+
+              <option value="03037C" style="background-color:#03037C; color:#fff;">Sapphire Blue</option>
+              <option value="01A848" style="background-color:#01A848; color:#000;">Emerald Green</option>
+              <option value="008C2E" style="background-color:#008C2E; color:#fff;">Kelly Green</option>
+              <option value="00715A" style="background-color:#00715A; color:#fff;">Teal</option>
+              <option value="003C00" style="background-color:#003C00; color:#fff;">Dark Green</option>
+            </select>
+
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-left:6px;padding-top:10px;" colspan="2"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Preview Background:</font></td>
+      </tr>
+      
+      <tr>
+        <td style="padding-left:6px;padding-bottom:10px;" colspan="2"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">
+            <form id="bgColorForm">
+            <input type="radio" name="bgcolor" value="0" checked="checked" /> Auto  
+            <input type="radio" name="bgcolor" value="1" /> Light  
+            <input type="radio" name="bgcolor" value="2" /> Dark</font></td></tr>
+            </form>
+      <tr>
+        <td>&nbsp;</td>
+        <td><img id="preview_button" onmouseover="if (!isDocumentSetUp) setUpDocument();" src="http://www.fanfavoritedesigns.com/images/assets/btn-preview-glow.gif" width="88" height="36"></td>
+      </tr>
+    </table>
+    <img src="http://www.fanfavoritedesigns.com/images/assets/hr.gif" width="217" height="25"><br>
+    <img src="http://www.fanfavoritedesigns.com/images/assets/hdr-order.gif" width="177" height="28"><br>
+    <table width="200" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Click the product link below:</font><br>
+          <!-- Note: the values inside the following <a> tags must exactly match the values in the dropdown list for jersey type above -->
+          <font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">&#8226;</font><a class="cart_links" href="http://www.fanfavoritedesigns.com/hockey-1.aspx" target="_parent">Baseball</a> 
+          <font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">&#8226;</font><a class="cart_links" href="http://www.fanfavoritedesigns.com/customize-your-basketball-jersey-sticker.aspx" target="_parent">Basketball</a> 
+          <font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">&#8226;</font><a class="cart_links" href="http://www.fanfavoritedesigns.com/customize-your-football-jersey-sticker.aspx" target="_parent">Football</a><br>
+          <font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">&#8226;</font><a class="cart_links" href="http://www.fanfavoritedesigns.com/customize-your-hockey-jersey-sticker.aspx" target="_parent">Hockey</a> 
+          <font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">&#8226;</font><a class="cart_links" href="http://www.fanfavoritedesigns.com/customize-your-soccer-jersey-sticker.aspx" target="_parent">Soccer</a></td>
+      </tr>
+    </table></td>
+    <td valign="top">
+      <div>
+      <div class="home_images" id="home_images_default">
+        <img src="http://www.fanfavoritedesigns.com/images/assets/img1.jpg" /><br />
+        <img src="http://www.fanfavoritedesigns.com/images/assets/img2.jpg" />
+      </div>
+      <div class="home_images" id="home_images_preview">
+        <a id="home_images_preview_link" href="#" target="_parent"><img id="home_images_preview_img" width="350px" height="350px" alt="Click to order!" title="Click to order!" /></a>
+      </div>
+      </div>
+      </td>
+    </tr>
+    </tbody>
+    </table>
+</body></html>

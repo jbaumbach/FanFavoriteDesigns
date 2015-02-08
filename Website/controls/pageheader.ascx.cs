@@ -1,0 +1,23 @@
+using Ffd.App.Core;
+using Ffd.Common;
+using Ffd.Data;
+using Ffd.Presentation.Website;
+
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+
+public partial class controls_pageheader : Ffd.Presentation.Website.BaseControl
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+}

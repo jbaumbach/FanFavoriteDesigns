@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Ffd.Presentation.LeadManager" GeneratedClassName="Leadmanager">
+  <Profiles />
+  <Settings>
+    <Setting Name="EmailTemplateNo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">001</Value>
+    </Setting>
+    <Setting Name="EmailSrcDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\FfdApplications\FanFriendlyDesigns\Ffd.Presentation.LeadManager\email</Value>
+    </Setting>
+    <Setting Name="DebuggingMode" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CheckEmailIntervalSecs" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

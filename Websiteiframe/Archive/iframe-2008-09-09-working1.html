@@ -1,0 +1,132 @@
+<html>
+    <head>
+    <style type="text/css">
+    body, a 
+    { 
+	    font-family:Arial,Helvetica;
+	    font-size:12px;
+        margin:0px; 
+        padding:0px; 
+	    background-color:#000;
+    }
+    li
+    {
+        list-style-type:disc;
+        list-style-position:outside;
+        color:#fff;
+    }
+    a
+    {
+        text-decoration:underline;
+        color:#fff;
+    }
+    .home_images
+    {
+        position:absolute; 
+        top: 0px; 
+        left:240px;
+        width:353px;
+        height:350px;
+    }
+    #home_images_preview
+    {
+        visibility:hidden;
+    }
+    #home_images_preview_img
+    {
+        border:0px;
+    }
+    </style>
+    <link rel="stylesheet" href="http://www.fanfavoritedesigns.com/themes/fanfavoritedesigns/css/default.css" />
+    <script type="text/javascript" src="http://www.ergocentricsoftware.com/ffd/scripts/jquery-1.2.2.min.js"></script>
+    
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+    
+    $("#preview_button").click(function(){
+        var name = $("#txtName").val().toUpperCase();
+        var number = $("#txtNumber").val();
+        
+        if ((name == "") && (number == ""))
+        {
+            alert("Please enter a name and/or a number to customize the jersey sticker!");
+            return;
+        }
+        
+        var template = $("#lstJerseyType").val();
+        var url = "http://lavamantis.dyndns.org:8090/getimage.ashx?name=" + name + "&number=" + number + "&template=" + template;
+        $("#home_images_default").css("visibility", "hidden");
+        $("#home_images_preview").css("visibility", "visible");
+        $("#home_images_preview_img").attr("src", url);
+    }).css("cursor", "pointer");
+    });
+    
+    </script>
+    </head>
+    <body>
+    <table>
+    <tbody>
+    <tr>
+    <td valign="top">
+    <p><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Perfect for:</font></p>
+      <ul>
+        <li><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Little League Sports</font></li>
+        <li><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">High-School and College Teams</font></li>
+        <li><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Recreational Leagues</font></li>
+      </ul>
+   <img src="http://www.fanfavoritedesigns.com/images/assets/hr.gif" width="217" height="25"><br>
+      <img src="http://www.fanfavoritedesigns.com/images/assets/hdr-preview.gif" width="177" height="28">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="7%" style="padding-left:6px"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Name:</font></td>
+        <td width="93%"><input type="text" name="txtName" id="txtName" maxlength="13"></td>
+      </tr>
+      <tr>
+        <td style="padding-left:6px"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Number:</font></td>
+        <td><input type="text" name="txtNumber" id="txtNumber" maxlength="2" size="2"></td>
+      </tr>
+      <tr>
+        <td style="padding-left:6px"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Type:</font></td>
+        <td>
+            <select name="lstJerseyType" id="lstJerseyType" class="inputListbox">
+	        <option value="Hockey">Hockey</option>
+	        <option value="Baseball">Baseball</option>
+	        <option value="Football">Football</option>
+	        <option value="Basketball">Basketball</option>
+	        <option value="Soccer">Soccer</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><img id="preview_button" src="http://www.fanfavoritedesigns.com/images/assets/btn-preview.gif" width="88" height="36"></td>
+      </tr>
+    </table>
+    <img src="http://www.fanfavoritedesigns.com/images/assets/hr.gif" width="217" height="25"><br>
+    <img src="http://www.fanfavoritedesigns.com/images/assets/hdr-order.gif" width="177" height="28"><br>
+    <table width="200" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Click the product link below:</font><br>
+          <font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">&#8226;</font><a href="http://www.fanfavoritedesigns.com/hockey-1.aspx" target="_parent">Baseball</a> 
+          <font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">&#8226;</font><a href="http://www.fanfavoritedesigns.com/customize-your-basketball-jersey-sticker.aspx" target="_parent">Basketball</a> 
+          <font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">&#8226;</font><a href="http://www.fanfavoritedesigns.com/customize-your-football-jersey-sticker.aspx" target="_parent">Football</a><br>
+          <font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">&#8226;</font><a href="http://www.fanfavoritedesigns.com/customize-your-hockey-jersey-sticker.aspx" target="_parent">Hockey</a> 
+          <font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">&#8226;</font><a href="http://www.fanfavoritedesigns.com/customize-your-soccer-jersey-sticker.aspx" target="_parent">Soccer</a></td>
+      </tr>
+    </table></td>
+    <td valign="top">
+      <div>
+      <div class="home_images" id="home_images_default">
+        <img src="http://www.fanfavoritedesigns.com/images/assets/img1.jpg" /><br />
+        <img src="http://www.fanfavoritedesigns.com/images/assets/img2.jpg" />
+      </div>
+      <div class="home_images" id="home_images_preview">
+        <img id="home_images_preview_img" width="350px" height="350px" />
+      </div>
+      </div>
+      </td>
+    </tr>
+    </tbody>
+    </table>
+</body></html>

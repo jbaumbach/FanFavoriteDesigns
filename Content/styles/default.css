@@ -1,0 +1,503 @@
+﻿/* 
+	Ffd styles 
+	Copyright (C) 2007 Fan Favorite Designs
+*/
+
+
+body 
+{
+    font-family:arial,lucida,helvetica,sans-serif;
+	background-color:White;
+	text-align:center;
+	margin:0;
+	padding:0;
+	font-size: 72.5%;
+}
+
+ul, dl, ol
+{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+}
+
+fieldset
+{
+	border-style:hidden;
+	border-width:0px;
+}
+
+a
+{
+	color:White;
+	text-decoration:none;
+}
+
+a:hover, a:active
+{
+	text-decoration:underline;
+}
+
+.copyright
+{
+	font-size:small;
+}
+
+.validationMessage
+{
+	color:Red;
+	font-size:1.3em;
+}
+
+#main
+{
+	position:relative;
+	width:800px;
+	margin:0px auto;
+}
+
+#content
+{
+	/* clear:both; */
+}
+
+#primary h2
+{
+	font-size:1.6em;
+}
+
+.pageblock
+{
+	background-color:Black;
+	color:White;
+	text-align:left;
+	padding:5px;
+	margin:2px;
+	/* clear:left; */
+}
+
+#header
+{
+	height:90px;
+	/* width:100%;  makes it super wide? */
+}
+
+#nav ul, #nav li
+{
+	float:left;
+}
+
+#nav ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#nav li
+{
+	margin:0px 5px 0px 10px;
+}
+
+#nav a
+{
+	text-decoration:none;
+	color:White;
+}
+
+#nav
+{
+	height:25px;
+	/* margin:2px; */
+}
+
+#primary
+{
+	float:left;
+	width:632px;
+	/* height:auto; */
+	min-height:600px;
+}
+
+#secondary
+{
+	float:left;
+	width:140px;
+	height:600px;
+}
+
+.mainmenu
+{
+	font-size:1.4em;
+}
+
+.content_title
+{
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+#content_primary_pics
+{
+	float:right;
+}
+
+#content_primary_pics img
+{
+	margin: 0px 5px 10px;
+}
+
+#content_primary_text
+{
+	float:left;
+	width:270px;
+}
+
+#content_primary_text ul, dl
+{
+	list-style-type:disc;
+}
+
+/*
+#preview_sticker
+{
+	padding:10px 0px 0px 0px;
+}
+
+#preview_sticker ol
+{
+	margin:0px;
+	padding:0px;
+}
+
+#preview_sticker label
+{
+	float:left;
+	width:55px;
+	text-align:right;
+	padding:2px 9px 0px 0px;
+}
+
+#preview_sticker li
+{
+	padding: 3px;
+}
+*/
+
+
+
+
+
+
+.sticker_form
+{
+	padding:10px 0px 0px 0px;
+	clear:left;
+	width:360px;
+}
+
+.sticker_form ol
+{
+	margin:0px;
+	padding:0px;
+}
+
+.sticker_form label
+{
+	float:left;
+	width:55px;
+	text-align:right;
+	padding:2px 9px 0px 0px;
+}
+
+.sticker_form li
+{
+	padding: 3px;
+}
+
+
+
+
+#preview_sticker .formSubmitButton
+{
+	/* text-align:center; */
+	padding:12px;
+}
+
+#footer
+{
+	text-align:center;
+	clear:left;
+}
+
+/* Sticker Gallery */
+
+.sticker_gallery /* .sticker_gallery_items */
+{
+	margin:0px; 
+	padding:0px;
+}
+
+.sticker_gallery li
+{
+	/* padding:0px; */
+}
+
+.sticker_gallery ul
+{
+	padding:0px;
+}
+
+
+
+.sticker_gallery_items
+{
+	height:19px;
+}
+
+.sticker_order_item
+{
+	height:40px;
+}
+
+.sticker_gallery li
+{
+	clear:left;
+}
+
+.sticker_gallery_items li
+{
+	float:left;
+	clear:none;
+}
+
+.header
+{
+	border-bottom: 6px double white;
+	height:18px;
+	margin-bottom:10px;
+}
+
+.header li
+{
+	font-weight:bold;
+}
+
+.sgi_sport
+{
+	width:110px;
+}
+
+.sgi_color
+{
+	width:90px;
+}
+
+.sgi_size
+{
+	width:120px;
+}
+
+.sgi_price
+{
+	width:70px;
+}
+
+.sgi_preview
+{
+	width:180px;
+}
+
+.sgi_preview img
+{
+	width:180px;
+	height:180px;
+}
+
+
+/* Order */
+
+.order_column
+{
+	width:49%;
+	float:left;
+}
+
+.order_column label
+{
+	float:left;
+	width:55px;
+	text-align:right;
+	padding:2px 9px 0px 0px;
+}
+
+.order_column .formSubmitButton
+{
+	padding:20px 0px 0px 40px;
+}
+
+.order_column ol
+{
+	margin:0px;
+	padding:0px;
+}
+
+.order_column li
+{
+	padding: 3px;
+	clear:left;
+}
+
+#current_order
+{
+	border-bottom: 6px double white;
+	padding-bottom:10px;
+}
+
+#current_order ul.sticker_gallery 
+{
+	/* padding-bottom:30px; */
+}
+
+.cos_quantity
+{
+	width:50px;
+}
+
+.cos_numericCol
+{
+	text-align:right;
+	margin-right:10px;
+}
+
+.cos_name
+{
+	width:110px;
+}
+
+.cos_jersey_number
+{
+	width:60px;
+}
+
+.cos_jersey_type
+{
+	width:80px;
+}
+
+.cos_preview
+{
+	width:80px;
+}
+
+.cos_cost
+{
+	width:50px;
+}
+
+.cos_extCost
+{
+	width:60px;
+	padding-right:15px !important;
+}
+
+.cos_action
+{
+	width:90px;
+}
+
+.cos_subtotal
+{
+	border-bottom:1px solid white;
+	border-top: 1px dotted white;
+	padding-top:4px;
+	margin-bottom:4px;
+}
+
+.cos_grandtotal
+{
+	font-weight:bold;
+}
+
+#order_summary table
+{
+	border-style:hidden;
+	border-width:0px;
+}
+
+#order_summary .header
+{
+	font-weight:bold;
+}
+
+.sticker_form_order
+{
+	float:left;
+}
+
+
+.done_entering_order
+{
+	float:left;
+}
+
+.done_entering_order #btnDoneOrder
+{
+	position:relative;
+	top:129px;
+}
+
+/* Address */
+
+.address_column
+{
+	width:255px;
+	float:left;
+	padding:10px 0px 0px 0px;
+}
+
+.copy_column
+{
+	padding:0px 10px 0px 10px;
+	float:left;
+	width:100px;
+}
+
+.copy_column img
+{
+	position:relative;
+	top:160px;
+	cursor:pointer;
+}
+
+.address_description
+{
+	height:20px;
+}
+
+/*
+.shipping_address
+{
+	padding:10px 0px 0px 0px;
+	clear:left;
+	width:360px;
+}
+*/
+.address_column ol
+{
+	margin:0px;
+	padding:0px;
+}
+
+.address_column label
+{
+	float:left;
+	width:55px;
+	text-align:right;
+	padding:2px 9px 0px 0px;
+}
+
+.address_column li
+{
+	padding: 3px;
+	height:30px;
+}
