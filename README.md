@@ -6,7 +6,7 @@ This company made white vinyl window stickers of your favorite sports hero.  The
 <img src="Screenshots/wnd-hockey-truck.jpg" alt="Hockey sticker on truck" width="300" />
 <img src="Screenshots/wnd-football-vw.jpg" alt="Football sticker on VW" width="300" />
 
-The stickers are made with a vinyl cutting machine (I used Roland Stika SV-8s), and passing it a special plotter file describing what the sticker looks like.  The trick is creating the plotter file cheaply.  By hand, it would take a really long time to create a sticker for every player in the NHL, NBA, NFL, and MLB leagues.  Also, each custom sticker would have to be created by hand.  Unless you're a huge company making large quantities, this is expensive and prohibitively time consuming.
+The stickers are made with a vinyl cutting machine (I used Roland Stika SV-8s), and passing it a special plotter file describing what the sticker looks like.  The trick is creating the plotter file cheaply.  By hand, it would take a really long time to create a sticker for every player in the NHL, NBA, NFL, and MLB leagues.  Also, each custom sticker would have to be created by hand.  Unless you're a huge company making large quantities, this is expensive and prohibitively time consuming.  This company had a grand total of 1 staffer (me).
 
 The solution, of course, is a software application!  That's why you're here, right?  This program was written in 2001, and it automates all these things:
 
