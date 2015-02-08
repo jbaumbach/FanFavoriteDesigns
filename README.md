@@ -33,8 +33,27 @@ They say a picture is worth a thousand words.  So, without further ado...
 
 <tr>
 <td width="600"><img src="Screenshots/ffd-mc-main.PNG" alt="Screenshot" /></td>
-<td>The main screen lets you play the perfect sound quickly from your library.</td>
+<td>The main screen of the app, allowing you to import/export data and generate a picture or a plotter file of a sticker.</td>
 </tr>
+
+
+<tr>
+<td><img src="Screenshots/ffd-mc-turbolister.PNG" alt="Screenshot" /></td>
+<td>The ebay screen where you can generate some or all of the listings.</td>
+</tr>
+
+
+<tr>
+<td><img src="Screenshots/ffd-mc-import-scrape.PNG" alt="Screenshot" /></td>
+<td>From here you can import team player listings or generate a CSV file for mailing out marketing postcards to highschools.</td>
+</tr>
+
+<tr>
+<td><img src="Screenshots/ffd-mc-custom-orders.PNG" alt="Screenshot" /></td>
+<td>For the e-commerce site hosted on "Monster Commerce", this screen would import all the custom orders and save them in the database for printing and shipping.</td>
+</tr>
+
+
 
 <tr>
 <td><img src="Screenshots/ffd-database.PNG" alt="Screenshot" /></td>
