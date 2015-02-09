@@ -1,7 +1,7 @@
 FanFavoriteDesigns
 ==================
 
-Way back in 2001, this company made white vinyl window stickers of your favorite sports hero.  The sticker was in the outline of a jersey, like a hockey jersey, with a name and number.  So, this:
+Way back in 2007, this company made white vinyl window stickers of your favorite sports hero.  The sticker was in the outline of a jersey, like a hockey jersey, with a name and number.  So, this:
 
 <img src="Screenshots/wnd-hockey-truck.jpg" alt="Hockey sticker on truck" height="220" />
 <img src="Screenshots/wnd-football-vw.jpg" alt="Football sticker on VW" height="220" />
