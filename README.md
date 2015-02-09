@@ -8,7 +8,7 @@ Way back in 2007, this company made white vinyl window stickers of your favorite
 
 The stickers are made with a vinyl cutting machine (I used Roland Stika SV-8s), and passing it a special plotter file describing what the sticker looks like.  The trick is creating the plotter file cheaply.  By hand, it would take a really long time to create a sticker for every player in the NHL, NBA, NFL, and MLB leagues.  Also, each custom sticker would have to be created by hand.  Unless you're a huge company making large quantities, this is expensive and prohibitively time consuming.  This company had a grand total of 1 staffer (me)!
 
-The solution, of course, is a software application!  That's why you're here, right?  Our program automates all these things:
+The solution, of course, is a software application!  The program automates all these things:
 
 * Scrape the data for all the players in the pro and college leagues from the web
 * Export all the listings (with a picture) to an ebay-compatible data file for upload
