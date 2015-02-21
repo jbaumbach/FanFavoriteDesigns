@@ -60,6 +60,12 @@ They say a picture is worth a thousand words.  So, without further ado...
 </tr>
 
 
+<tr>
+<td><img src="Screenshots/ffd-all-real-stickers.jpg" alt="Screenshot" /></td>
+<td>Here's all the sticker styles and a few different colors.</td>
+</tr>
+
+
 </table>
 
 
